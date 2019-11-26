@@ -1,6 +1,5 @@
 flask
 pandas
-re
 nltk
 sklearn
 gunicorn
