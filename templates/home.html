@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Sentiment Analysis API</title>
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+    <h1>Sentiment Analysis Model for Customer Reviews</h1>
+    <p>Choose your category and type in the review to see whether it is positive or negative!</p>
+    </div>
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="form-group">
+          <form action="{{ url_for('predict')}}" method="POST">
+            <label for="comment">Comment:</label>
+            <textarea class="form-control" rows="5" id="comment", name="review"></textarea><br>
+            <input class="btn btn-info" type="Submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="/" class="btn btn-info" role="button">Reset</a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      {% if prediction == 1%}
+      <img src="https://i.pinimg.com/originals/c0/95/81/c09581d96ac318492c5df5ed20ac168a.jpg" height="200" width="200">
+      {% elif prediction == 0%}
+      <img src="https://cdn.iconscout.com/icon/free/png-256/face-frown-big-sad-emoji-37683.png" height="200" width="200">
+      {% endif %}
+    </div>
+  </body>
+</html>

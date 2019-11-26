@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Result</title>
+</head>
+<body>
+    <div class="results">
+	{% if prediction == 1%}
+	<h2 style="color:red;">They like the food!</h2>
+	{% elif prediction == 0%}
+	<h2 style="color:blue;">Don't like the food!</h2>
+	{% endif %}
+
+	</div>
+
+</body>
+</html>
