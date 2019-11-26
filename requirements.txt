@@ -1,5 +1,4 @@
 flask
-pickle
 pandas
 re
 nltk
