@@ -1,2 +1,2 @@
 # Sentiment Analysis Model
- Created a Sentiment Analysis model using NLP and deployed it using Flask.
+ Created a basic +/- Sentiment Analysis model using NLP and deployed using Flask
