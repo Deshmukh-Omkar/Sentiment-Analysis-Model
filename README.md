@@ -4,7 +4,7 @@ In today's world, where we have shifted most of our daily life on the internet, 
 Sentiment Analysis helps the businesses understand whether a user likes the product/service they offer by displaying the sentiment associated with the review.
 
 ## Try it out for yourself
-![Heroku App](https://od-sentiment-analysis-model.herokuapp.com)
+[Heroku App](https://od-sentiment-analysis-model.herokuapp.com)
 
 ### Our Version (v0)
 In our version, we focussed on creating a binary Sentiment Analysis model which displays whether the comment is either Positive or Negative. 
